@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Day One</title>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header class="bg-warning p-2 fw-bold">
+    JavaScript Day One <i class="fs-3 mdi mdi-language-javascript"></i>
+  </header>
+  <main class="container">
+    <section class="row">
+      <div class="col-4">
+        <button class="btn btn-primary" onclick="greeting()">Greeting</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-danger" onclick="increaseBurgers()">Get Burger🍔</button>
+      </div>
+    </section>
+
+    <section class="row justify-content-center my-5">
+      <div id="my-input" class="col-12">
+
+      </div>
+      <button class="col-5 btn btn-success input-button" onclick="addAlien()">👽</button>
+      <button class="col-5 btn btn-light input-button" onclick="addUnicorn()">🦄</button>
+      <!-- NOTE Arguments are values passed to "fill in" the parameters -->
+      <button class="col-5 btn btn-info input-button" onclick="addEmoji('🧌')">🧌</button>
+      <button class="col-5 btn btn-warning input-button" onclick="addEmoji('🌮')">🌮</button>
+      <button class="btn btn-primary rounded rounded-pill" onclick="checkAnswer()">Submit</button>
+      <button class="btn btn-outline-light rounded rounded-pill" onclick="resetCode()">reset</button>
+    </section>
+
+    <img class="img-fluid d-none" src="clappingorangutan.gif" alt="">
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+
+</html>
